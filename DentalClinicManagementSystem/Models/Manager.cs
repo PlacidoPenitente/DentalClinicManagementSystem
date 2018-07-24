@@ -5,7 +5,7 @@ using System.Web;
 
 namespace DentalClinicManagementSystem.Models
 {
-    public sealed class Manager : IEmployee
+    public sealed class Manager : IUser
     {
         public int Id { get; set; }
         public DateTime DateAdded { get; set; }
@@ -30,6 +30,5 @@ namespace DentalClinicManagementSystem.Models
         public string Answer1 { get; set; }
         public string Answer2 { get; set; }
         public string Answer3 { get; set; }
-        public Branch Branch { get; set; }
     }
 }

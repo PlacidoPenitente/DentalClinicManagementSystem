@@ -10,6 +10,7 @@ namespace DentalClinicManagementSystem.Models
         public int Id { get; set; }
         public DateTime DateAdded { get; set; }
         public DateTime DateModified { get; set; }
+        public Manager Manager { get; set; }
         public Status Status { get; set; }
         public string Name { get; set; }
         public string Address { get; set; }
