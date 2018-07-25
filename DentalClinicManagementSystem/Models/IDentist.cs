@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DentalClinicManagementSystem.Models
 {
-    public interface IDentist : IEmployee
+    public interface IDentist
     {
         float CommissionRate { get; set; }
         string Specialization { get; set; }

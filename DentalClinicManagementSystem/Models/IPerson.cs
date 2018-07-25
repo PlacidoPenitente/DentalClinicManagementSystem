@@ -7,7 +7,7 @@ using System.Xml.Linq;
 
 namespace DentalClinicManagementSystem.Models
 {
-    public interface IPerson : IModel
+    public interface IPerson
     {
         string FirstName { get; set; }
         string MiddleName { get; set; }

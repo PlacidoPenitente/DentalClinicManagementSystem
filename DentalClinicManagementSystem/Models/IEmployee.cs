@@ -1,6 +1,6 @@
 ﻿namespace DentalClinicManagementSystem.Models
 {
-    public interface IEmployee : IUser
+    public interface IEmployee
     {
         Branch Branch { get; set; }
     }

@@ -1,34 +1,44 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Web;
 
 namespace DentalClinicManagementSystem.Models
 {
-    public sealed class Manager : IUser
+    public class Person : Model, IPerson
     {
-        public int Id { get; set; }
-        public DateTime DateAdded { get; set; }
-        public DateTime DateModified { get; set; }
-        public Status Status { get; set; }
+        [DisplayName("First Name")]
         public string FirstName { get; set; }
+
+        [DisplayName("Middle Name")]
         public string MiddleName { get; set; }
+
+        [DisplayName("Last Name")]
         public string LastName { get; set; }
+
+        [DisplayName("Gender")]
         public Gender Gender { get; set; }
+
+        [DisplayName("Birthdate")]
         public DateTime Birthdate { get; set; }
+
+        [DisplayName("Nationality")]
         public string Nationality { get; set; }
+
+        [DisplayName("Religion")]
         public string Religion { get; set; }
+
+        [DisplayName("Address")]
         public string Address { get; set; }
+
+        [DisplayName("Telephone No.")]
         public string TelephoneNo { get; set; }
+
+        [DisplayName("Mobile No.")]
         public string MobileNo { get; set; }
+
+        [DisplayName("Nickname")]
         public string Nickname { get; set; }
-        public string Username { get; set; }
-        public char[] Password { get; set; }
-        public int SecurityQuestion1 { get; set; }
-        public int SecurityQuestion2 { get; set; }
-        public int SecurityQuestion3 { get; set; }
-        public string Answer1 { get; set; }
-        public string Answer2 { get; set; }
-        public string Answer3 { get; set; }
     }
 }
