@@ -159,6 +159,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Content\AdministratorsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -186,6 +187,18 @@
     <Compile Include="Migrations\201807250656523_RecreatedModels.cs" />
     <Compile Include="Migrations\201807250656523_RecreatedModels.Designer.cs">
       <DependentUpon>201807250656523_RecreatedModels.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807250722155_AddedAdministrator.cs" />
+    <Compile Include="Migrations\201807250722155_AddedAdministrator.Designer.cs">
+      <DependentUpon>201807250722155_AddedAdministrator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807250723373_AddedAttributesToUsername.cs" />
+    <Compile Include="Migrations\201807250723373_AddedAttributesToUsername.Designer.cs">
+      <DependentUpon>201807250723373_AddedAttributesToUsername.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807250732355_AddedAttributesToAdminstrator.cs" />
+    <Compile Include="Migrations\201807250732355_AddedAttributesToAdminstrator.Designer.cs">
+      <DependentUpon>201807250732355_AddedAttributesToAdminstrator.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Administrator.cs" />
@@ -284,6 +297,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201807250656523_RecreatedModels.resx">
       <DependentUpon>201807250656523_RecreatedModels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807250722155_AddedAdministrator.resx">
+      <DependentUpon>201807250722155_AddedAdministrator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807250723373_AddedAttributesToUsername.resx">
+      <DependentUpon>201807250723373_AddedAttributesToUsername.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807250732355_AddedAttributesToAdminstrator.resx">
+      <DependentUpon>201807250732355_AddedAttributesToAdminstrator.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
