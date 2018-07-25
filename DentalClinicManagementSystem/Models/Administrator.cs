@@ -29,21 +29,22 @@ namespace DentalClinicManagementSystem.Models
         public string Username { get; set; }
 
         [DisplayName("Password")]
+        [DataType(DataType.Password)]
         [StringLength(32, MinimumLength = 8, ErrorMessage = "Invalid password length.")]
         [Required(AllowEmptyStrings = false, ErrorMessage = "Password is required.")]
         public string Password { get; set; }
 
         [DisplayName("Security Question No. 1")]
         [Required(AllowEmptyStrings = false, ErrorMessage = "Security Question is required.")]
-        public int SecurityQuestion1 { get; set; }
+        public string SecurityQuestion1 { get; set; }
 
         [DisplayName("Security Question No. 2")]
         [Required(AllowEmptyStrings = false, ErrorMessage = "Security Question is required.")]
-        public int SecurityQuestion2 { get; set; }
+        public string SecurityQuestion2 { get; set; }
 
         [DisplayName("Security Question No. 3")]
         [Required(AllowEmptyStrings = false, ErrorMessage = "Security Question is required.")]
-        public int SecurityQuestion3 { get; set; }
+        public string SecurityQuestion3 { get; set; }
 
         [DisplayName("Answer")]
         [Required(AllowEmptyStrings = false, ErrorMessage = "Provide an answer to question.")]

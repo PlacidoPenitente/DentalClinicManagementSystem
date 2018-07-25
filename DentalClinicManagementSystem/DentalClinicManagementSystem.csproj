@@ -159,7 +159,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Content\AdministratorsController.cs" />
+    <Compile Include="Controllers\AdministratorsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -199,6 +199,10 @@
     <Compile Include="Migrations\201807250732355_AddedAttributesToAdminstrator.cs" />
     <Compile Include="Migrations\201807250732355_AddedAttributesToAdminstrator.Designer.cs">
       <DependentUpon>201807250732355_AddedAttributesToAdminstrator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807250745495_AddededMoreAttributes.cs" />
+    <Compile Include="Migrations\201807250745495_AddededMoreAttributes.Designer.cs">
+      <DependentUpon>201807250745495_AddededMoreAttributes.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Administrator.cs" />
@@ -262,6 +266,11 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Administrators\Create.cshtml" />
+    <Content Include="Views\Administrators\Delete.cshtml" />
+    <Content Include="Views\Administrators\Details.cshtml" />
+    <Content Include="Views\Administrators\Edit.cshtml" />
+    <Content Include="Views\Administrators\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -306,6 +315,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201807250732355_AddedAttributesToAdminstrator.resx">
       <DependentUpon>201807250732355_AddedAttributesToAdminstrator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807250745495_AddededMoreAttributes.resx">
+      <DependentUpon>201807250745495_AddededMoreAttributes.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

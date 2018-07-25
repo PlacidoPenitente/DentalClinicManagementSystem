@@ -12,9 +12,9 @@ namespace DentalClinicManagementSystem.Models
     {
         string Username { get; set; }
         string Password { get; set; }
-        int SecurityQuestion1 { get; set; }
-        int SecurityQuestion2 { get; set; }
-        int SecurityQuestion3 { get; set; }
+        string SecurityQuestion1 { get; set; }
+        string SecurityQuestion2 { get; set; }
+        string SecurityQuestion3 { get; set; }
         string Answer1 { get; set; }
         string Answer2 { get; set; }
         string Answer3 { get; set; }

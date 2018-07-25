@@ -17,13 +17,13 @@ namespace DentalClinicManagementSystem.Models
         public string Password { get; set; }
 
         [DisplayName("Security Question No. 1")]
-        public int SecurityQuestion1 { get; set; }
+        public string SecurityQuestion1 { get; set; }
 
         [DisplayName("Security Question No. 2")]
-        public int SecurityQuestion2 { get; set; }
+        public string SecurityQuestion2 { get; set; }
 
         [DisplayName("Security Question No. 3")]
-        public int SecurityQuestion3 { get; set; }
+        public string SecurityQuestion3 { get; set; }
 
         [DisplayName("Answer")]
         public string Answer1 { get; set; }

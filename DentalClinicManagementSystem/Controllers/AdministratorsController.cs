@@ -9,7 +9,7 @@ using System.Web;
 using System.Web.Mvc;
 using DentalClinicManagementSystem.Models;
 
-namespace DentalClinicManagementSystem.Content
+namespace DentalClinicManagementSystem.Controllers
 {
     public class AdministratorsController : Controller
     {
