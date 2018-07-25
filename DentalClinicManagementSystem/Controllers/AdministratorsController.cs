@@ -39,7 +39,7 @@ namespace DentalClinicManagementSystem.Controllers
         // GET: Administrators/Create
         public ActionResult Create()
         {
-            return View();
+            return View(new Administrator());
         }
 
         // POST: Administrators/Create
@@ -51,6 +51,8 @@ namespace DentalClinicManagementSystem.Controllers
         {
             if (ModelState.IsValid)
             {
+                administrator.DateAdded = DateTime.Now;
+                administrator.DateModified = DateTime.Now;
                 db.Administrators.Add(administrator);
                 await db.SaveChangesAsync();
                 return RedirectToAction("Index");
@@ -67,6 +69,7 @@ namespace DentalClinicManagementSystem.Controllers
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
             Administrator administrator = await db.Administrators.FindAsync(id);
+            administrator.DateModified = DateTime.Now;
             if (administrator == null)
             {
                 return HttpNotFound();
@@ -79,7 +82,7 @@ namespace DentalClinicManagementSystem.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Edit([Bind(Include = "Id,DateAdded,DateModified,Status,Username,Password,SecurityQuestion1,SecurityQuestion2,SecurityQuestion3,Answer1,Answer2,Answer3")] Administrator administrator)
+        public async Task<ActionResult> Edit([Bind(Include = "Id,Status,DateAdded,DateModified,Username,Password,SecurityQuestion1,SecurityQuestion2,SecurityQuestion3,Answer1,Answer2,Answer3")] Administrator administrator)
         {
             if (ModelState.IsValid)
             {
