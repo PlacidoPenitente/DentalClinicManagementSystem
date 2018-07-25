@@ -156,7 +156,10 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AdministratorsController.cs" />
+    <Compile Include="Controllers\BranchesController.cs" />
+    <Compile Include="Controllers\DentistsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\StaffsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -306,6 +309,21 @@
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
+    <Content Include="Views\Staffs\Create.cshtml" />
+    <Content Include="Views\Staffs\Delete.cshtml" />
+    <Content Include="Views\Staffs\Details.cshtml" />
+    <Content Include="Views\Staffs\Edit.cshtml" />
+    <Content Include="Views\Staffs\Index.cshtml" />
+    <Content Include="Views\Dentists\Create.cshtml" />
+    <Content Include="Views\Dentists\Delete.cshtml" />
+    <Content Include="Views\Dentists\Details.cshtml" />
+    <Content Include="Views\Dentists\Edit.cshtml" />
+    <Content Include="Views\Dentists\Index.cshtml" />
+    <Content Include="Views\Branches\Create.cshtml" />
+    <Content Include="Views\Branches\Delete.cshtml" />
+    <Content Include="Views\Branches\Details.cshtml" />
+    <Content Include="Views\Branches\Edit.cshtml" />
+    <Content Include="Views\Branches\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

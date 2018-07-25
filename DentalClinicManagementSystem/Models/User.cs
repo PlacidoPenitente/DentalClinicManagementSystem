@@ -13,7 +13,7 @@ namespace DentalClinicManagementSystem.Models
         [DisplayName("Username")]
         public string Username { get; set; }
 
-        [DisplayName("Passowrd")]
+        [DisplayName("Password")]
         public string Password { get; set; }
 
         [DisplayName("Security Question No. 1")]
