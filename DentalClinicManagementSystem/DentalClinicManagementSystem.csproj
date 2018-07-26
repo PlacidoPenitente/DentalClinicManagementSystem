@@ -203,6 +203,10 @@
     <Compile Include="Migrations\201807250745495_AddededMoreAttributes.Designer.cs">
       <DependentUpon>201807250745495_AddededMoreAttributes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201807260644491_AddedAttributesToBranchModel.cs" />
+    <Compile Include="Migrations\201807260644491_AddedAttributesToBranchModel.Designer.cs">
+      <DependentUpon>201807260644491_AddedAttributesToBranchModel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Administrator.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -361,6 +365,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201807250745495_AddededMoreAttributes.resx">
       <DependentUpon>201807250745495_AddededMoreAttributes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807260644491_AddedAttributesToBranchModel.resx">
+      <DependentUpon>201807260644491_AddedAttributesToBranchModel.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

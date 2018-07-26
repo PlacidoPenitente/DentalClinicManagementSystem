@@ -39,7 +39,7 @@ namespace DentalClinicManagementSystem.Controllers
         // GET: Branches/Create
         public ActionResult Create()
         {
-            return View();
+            return View(new Branch());
         }
 
         // POST: Branches/Create
@@ -51,6 +51,8 @@ namespace DentalClinicManagementSystem.Controllers
         {
             if (ModelState.IsValid)
             {
+                branch.DateAdded = DateTime.Now;
+                branch.DateModified = DateTime.Now;
                 db.Branches.Add(branch);
                 await db.SaveChangesAsync();
                 return RedirectToAction("Index");
@@ -83,6 +85,7 @@ namespace DentalClinicManagementSystem.Controllers
         {
             if (ModelState.IsValid)
             {
+                branch.DateModified = DateTime.Now;
                 db.Entry(branch).State = EntityState.Modified;
                 await db.SaveChangesAsync();
                 return RedirectToAction("Index");
