@@ -106,10 +106,10 @@
     </div>
 
     <div class="form-group">
-        @Html.LabelFor(model => model.SelectedBranchId, htmlAttributes: new { @class = "control-label col-md-2" })
+        @Html.LabelFor(model => model.Dentist.Branch, htmlAttributes: new { @class = "control-label col-md-2" })
         <div class="col-md-10">
-            @Html.DropDownListFor(model=> model.SelectedBranchId, Model.Branches, new { @class = "control-label col-md-2" })
-            @Html.ValidationMessageFor(model => model.SelectedBranchId, "", new { @class = "text-danger" })
+            @Html.DropDownListFor(model=> model.SelectedBranchId, Model.Branches, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.Dentist.Branch, "", new { @class = "text-danger" })
         </div>
     </div>
 
