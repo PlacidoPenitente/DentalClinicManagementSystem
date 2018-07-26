@@ -207,6 +207,14 @@
     <Compile Include="Migrations\201807260644491_AddedAttributesToBranchModel.Designer.cs">
       <DependentUpon>201807260644491_AddedAttributesToBranchModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201807260834433_AddedAttributesToPersonClass.cs" />
+    <Compile Include="Migrations\201807260834433_AddedAttributesToPersonClass.Designer.cs">
+      <DependentUpon>201807260834433_AddedAttributesToPersonClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807260839500_AddedAttributesToUserClass.cs" />
+    <Compile Include="Migrations\201807260839500_AddedAttributesToUserClass.Designer.cs">
+      <DependentUpon>201807260839500_AddedAttributesToUserClass.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Administrator.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -369,6 +377,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201807260644491_AddedAttributesToBranchModel.resx">
       <DependentUpon>201807260644491_AddedAttributesToBranchModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807260834433_AddedAttributesToPersonClass.resx">
+      <DependentUpon>201807260834433_AddedAttributesToPersonClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807260839500_AddedAttributesToUserClass.resx">
+      <DependentUpon>201807260839500_AddedAttributesToUserClass.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
