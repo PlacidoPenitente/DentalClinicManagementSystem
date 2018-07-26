@@ -8,6 +8,7 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using DentalClinicManagementSystem.Models;
+using DentalClinicManagementSystem.ViewModels;
 
 namespace DentalClinicManagementSystem.Controllers
 {
@@ -18,7 +19,7 @@ namespace DentalClinicManagementSystem.Controllers
         // GET: Dentists
         public async Task<ActionResult> Index()
         {
-            return View(await db.Dentists.ToListAsync());
+            return View(await db.Dentists.Include("Branch").ToListAsync());
         }
 
         // GET: Dentists/Details/5
@@ -39,7 +40,10 @@ namespace DentalClinicManagementSystem.Controllers
         // GET: Dentists/Create
         public ActionResult Create()
         {
-            return View();
+            return View(new CreateDentistViewModel()
+            {
+                Dentist = new Dentist(),
+            });
         }
 
         // POST: Dentists/Create
@@ -47,16 +51,19 @@ namespace DentalClinicManagementSystem.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Create([Bind(Include = "Id,Username,Password,SecurityQuestion1,SecurityQuestion2,SecurityQuestion3,Answer1,Answer2,Answer3,FirstName,MiddleName,LastName,Gender,Birthdate,Nationality,Religion,Address,TelephoneNo,MobileNo,Nickname,DateAdded,DateModified,Status,CommissionRate,Specialization")] Dentist dentist)
+        public async Task<ActionResult> Create(CreateDentistViewModel viewModel)
         {
             if (ModelState.IsValid)
             {
-                db.Users.Add(dentist);
+                viewModel.Dentist.DateAdded = DateTime.Now;
+                viewModel.Dentist.DateModified = DateTime.Now;
+                viewModel.Dentist.Branch = db.Branches.SingleOrDefault(x => x.Id == viewModel.SelectedBranchId);
+                db.Users.Add(viewModel.Dentist);
                 await db.SaveChangesAsync();
                 return RedirectToAction("Index");
             }
 
-            return View(dentist);
+            return View(viewModel);
         }
 
         // GET: Dentists/Edit/5

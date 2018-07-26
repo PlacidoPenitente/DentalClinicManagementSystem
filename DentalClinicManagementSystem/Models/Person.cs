@@ -18,7 +18,7 @@ namespace DentalClinicManagementSystem.Models
         public string MiddleName { get; set; }
 
         [DisplayName("Last Name")]
-        [Required(AllowEmptyStrings = false, ErrorMessage = "First Name is required.")]
+        [Required(AllowEmptyStrings = false, ErrorMessage = "Last Name is required.")]
         public string LastName { get; set; }
 
         [DisplayName("Gender")]
@@ -26,7 +26,7 @@ namespace DentalClinicManagementSystem.Models
 
         [DisplayName("Birthdate")]
         [DataType(DataType.Date)]
-        [Required]
+        [Required(ErrorMessage = "Please enter your birthdate.")]
         public DateTime Birthdate { get; set; }
 
         [DisplayName("Nationality")]
@@ -40,12 +40,12 @@ namespace DentalClinicManagementSystem.Models
         public string Address { get; set; }
 
         [DisplayName("Telephone No.")]
-        [Phone]
+        [Phone(ErrorMessage = "Invalid Telephone No.")]
         public string TelephoneNo { get; set; }
 
         [DisplayName("Mobile No.")]
         [Required(AllowEmptyStrings = false, ErrorMessage = "Mobile No. is required.")]
-        [Phone]
+        [Phone(ErrorMessage = "Invalid Mobile No.")]
         [StringLength(11,MinimumLength = 11, ErrorMessage = "Please enter your 11-digit number.")]
         public string MobileNo { get; set; }
 
