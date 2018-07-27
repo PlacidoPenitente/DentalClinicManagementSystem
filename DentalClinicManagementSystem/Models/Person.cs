@@ -25,6 +25,7 @@ namespace DentalClinicManagementSystem.Models
         public Gender Gender { get; set; }
 
         [DisplayName("Birthdate")]
+        [DisplayFormat(DataFormatString = "{0:MMMM' 'd', 'yyyy}")]
         [DataType(DataType.Date)]
         [Required(ErrorMessage = "Please enter your birthdate.")]
         public DateTime Birthdate { get; set; }

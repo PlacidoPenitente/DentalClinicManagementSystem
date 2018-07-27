@@ -78,7 +78,8 @@ namespace DentalClinicManagementSystem.Controllers
             {
                 return HttpNotFound();
             }
-            return View(dentist);
+            var vm = new CreateDentistViewModel() {Dentist = dentist};
+            return View(vm);
         }
 
         // POST: Dentists/Edit/5
@@ -86,15 +87,16 @@ namespace DentalClinicManagementSystem.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Edit([Bind(Include = "Id,Username,Password,SecurityQuestion1,SecurityQuestion2,SecurityQuestion3,Answer1,Answer2,Answer3,FirstName,MiddleName,LastName,Gender,Birthdate,Nationality,Religion,Address,TelephoneNo,MobileNo,Nickname,DateAdded,DateModified,Status,CommissionRate,Specialization")] Dentist dentist)
+        public async Task<ActionResult> Edit(CreateDentistViewModel vm)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(dentist).State = EntityState.Modified;
+                vm.Dentist.DateModified = DateTime.Now;
+                db.Entry(vm.Dentist).State = EntityState.Modified;
                 await db.SaveChangesAsync();
                 return RedirectToAction("Index");
             }
-            return View(dentist);
+            return View(vm);
         }
 
         // GET: Dentists/Delete/5

@@ -1,6 +1,9 @@
-﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+﻿html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -33,4 +36,19 @@ textarea {
     background-color: #111; /* Black */
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 20px;
+}
+
+.scrollviewer {
+    display: block;
+    max-height: 200px;
+    overflow-y: auto;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+                       'header'
+                       'main'
+                       'footer';
 }
