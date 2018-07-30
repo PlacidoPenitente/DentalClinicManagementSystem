@@ -76,13 +76,13 @@
             </div>
         </nav>
     </div>
-<div class="workspace">
-    <div class="container">
+<div class="workspace" style="overflow: auto;">
+    <div class="container" style="display: flex; flex-direction: column; height: 100%;">
         @RenderBody()
     </div>
 </div>
 <div class="footer">
-    <div class="container bg-dark">
+    <div class="container-fluid bg-dark">
         <p style="margin: auto; text-align: center; color: white;">&copy; @DateTime.Now.Year - All ABout Teeth</p>
     </div>
 </div>

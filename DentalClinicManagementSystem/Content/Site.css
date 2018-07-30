@@ -17,8 +17,8 @@
 }
 
 .workspace {
-    overflow: auto;
     height: 100%;
+    flex-wrap: nowrap;
     flex-grow: 1;
     flex-shrink: 1;
 }
