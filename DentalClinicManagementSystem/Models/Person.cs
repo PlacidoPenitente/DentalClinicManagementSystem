@@ -21,6 +21,7 @@
         public string LastName { get; set; }
 
         [DisplayName("Gender")]
+        [EnumDataType(typeof(Gender))]
         public Gender Gender { get; set; }
 
         [DisplayName("Birthdate")]

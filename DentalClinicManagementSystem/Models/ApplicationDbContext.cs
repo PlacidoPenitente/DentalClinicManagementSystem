@@ -9,7 +9,7 @@
         {
         }
         
-        public DbSet<Branch> Branches { get; }
+        public DbSet<Branch> Branches { get; set; }
 
         public DbSet<SecurityQuestion> SecurityQuestions { get; set; }
 

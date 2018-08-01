@@ -211,6 +211,10 @@
     <Compile Include="Migrations\201807260839500_AddedAttributesToUserClass.Designer.cs">
       <DependentUpon>201807260839500_AddedAttributesToUserClass.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201808010244520_Initial.cs" />
+    <Compile Include="Migrations\201808010244520_Initial.Designer.cs">
+      <DependentUpon>201808010244520_Initial.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Models\Branch.cs" />
@@ -360,6 +364,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201807260839500_AddedAttributesToUserClass.resx">
       <DependentUpon>201807260839500_AddedAttributesToUserClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808010244520_Initial.resx">
+      <DependentUpon>201808010244520_Initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
