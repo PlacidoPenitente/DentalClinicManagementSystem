@@ -157,6 +157,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\BranchesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\SecurityQuestionsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -323,6 +324,11 @@
     <Content Include="Views\Branches\Details.cshtml" />
     <Content Include="Views\Branches\Edit.cshtml" />
     <Content Include="Views\Branches\Index.cshtml" />
+    <Content Include="Views\SecurityQuestions\Create.cshtml" />
+    <Content Include="Views\SecurityQuestions\Delete.cshtml" />
+    <Content Include="Views\SecurityQuestions\Details.cshtml" />
+    <Content Include="Views\SecurityQuestions\Edit.cshtml" />
+    <Content Include="Views\SecurityQuestions\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
