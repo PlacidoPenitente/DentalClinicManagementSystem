@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-
-namespace DentalClinicManagementSystem.Models
+﻿namespace DentalClinicManagementSystem.Models
 {
     public enum Position
     {
+        Administrator,
         Clerk,
         Receptionist
     }

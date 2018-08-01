@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Security;
-using System.Web;
-
-namespace DentalClinicManagementSystem.Models
+﻿namespace DentalClinicManagementSystem.Models
 {
+    using System.ComponentModel;
+
     public sealed class Staff : Employee, IStaff
     {
         [DisplayName("Position")]

@@ -48,13 +48,5 @@
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="DentalClinicManagementSystem.Models.Administrator">
-    <Position X="3.75" Y="1.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>wAECAEAEAIAAAAAQAQAAAAQAAAAAAAACAQAAAAAAAAA=</HashCode>
-      <FileName>Models\Administrator.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" />
-  </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

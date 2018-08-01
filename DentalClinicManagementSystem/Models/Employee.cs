@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Web;
-
-namespace DentalClinicManagementSystem.Models
+﻿namespace DentalClinicManagementSystem.Models
 {
+    using System.ComponentModel;
+
     public class Employee : User, IEmployee
     {
         [DisplayName("Branch")]

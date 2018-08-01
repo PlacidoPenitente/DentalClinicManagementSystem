@@ -1,19 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Web;
-
-namespace DentalClinicManagementSystem.Models
+﻿namespace DentalClinicManagementSystem.Models
 {
-    public class Branch : Model, IBranch
+    using System.ComponentModel;
+    using System.ComponentModel.DataAnnotations;
+    using System.ComponentModel.DataAnnotations.Schema;
+
+    public sealed class Branch : Model, IBranch
     {
-        [Required(AllowEmptyStrings = false, ErrorMessage = "Branch name is required.")]
-        [StringLength(32)]
-        [Index(IsUnique=true)]
+        [DisplayName("Name")]
+        [Required(AllowEmptyStrings = false, ErrorMessage = "Branch Name is required.")]
+        [MaxLength(255, ErrorMessage = "Branch Name is too long.")]
+        [Index(IsUnique = true)]
         public string Name { get; set; }
+
+        [DisplayName("Address")]
         [Required(AllowEmptyStrings = false, ErrorMessage = "Branch Address is required.")]
+        [MaxLength(255, ErrorMessage = "Branch Address is too long.")]
         public string Address { get; set; }
     }
 }

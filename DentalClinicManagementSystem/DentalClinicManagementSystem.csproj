@@ -155,11 +155,6 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\AdministratorsController.cs" />
-    <Compile Include="Controllers\BranchesController.cs" />
-    <Compile Include="Controllers\DentistsController.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\StaffsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -216,7 +211,6 @@
       <DependentUpon>201807260839500_AddedAttributesToUserClass.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Models\Administrator.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Models\Branch.cs" />
     <Compile Include="Models\Dentist.cs" />
@@ -227,11 +221,13 @@
     <Compile Include="Models\IEmployee.cs" />
     <Compile Include="Models\IModel.cs" />
     <Compile Include="Models\IPerson.cs" />
+    <Compile Include="Models\ISecurityQuestion.cs" />
     <Compile Include="Models\IStaff.cs" />
     <Compile Include="Models\IUser.cs" />
     <Compile Include="Models\Model.cs" />
     <Compile Include="Models\Person.cs" />
     <Compile Include="Models\Position.cs" />
+    <Compile Include="Models\SecurityQuestion.cs" />
     <Compile Include="Models\Staff.cs" />
     <Compile Include="Models\Status.cs" />
     <Compile Include="Models\User.cs" />
@@ -305,14 +301,6 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Administrators\Create.cshtml" />
-    <Content Include="Views\Administrators\Delete.cshtml" />
-    <Content Include="Views\Administrators\Details.cshtml" />
-    <Content Include="Views\Administrators\Edit.cshtml" />
-    <Content Include="Views\Administrators\Index.cshtml" />
     <Content Include="Scripts\umd\popper.min.js.map" />
     <Content Include="Scripts\umd\popper.js.map" />
     <Content Include="Scripts\umd\popper-utils.min.js.map" />
@@ -322,24 +310,10 @@
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
-    <Content Include="Views\Staffs\Create.cshtml" />
-    <Content Include="Views\Staffs\Delete.cshtml" />
-    <Content Include="Views\Staffs\Details.cshtml" />
-    <Content Include="Views\Staffs\Edit.cshtml" />
-    <Content Include="Views\Staffs\Index.cshtml" />
-    <Content Include="Views\Dentists\Create.cshtml" />
-    <Content Include="Views\Dentists\Delete.cshtml" />
-    <Content Include="Views\Dentists\Details.cshtml" />
-    <Content Include="Views\Dentists\Edit.cshtml" />
-    <Content Include="Views\Dentists\Index.cshtml" />
-    <Content Include="Views\Branches\Create.cshtml" />
-    <Content Include="Views\Branches\Delete.cshtml" />
-    <Content Include="Views\Branches\Details.cshtml" />
-    <Content Include="Views\Branches\Edit.cshtml" />
-    <Content Include="Views\Branches\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Controllers\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
